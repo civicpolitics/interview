@@ -1,15 +1,17 @@
 # Objective
 
-Create and print a JSON object containing the data at the URL in url.txt. The
-object should have a key for each section of the site. The value for each of
-these keys should be a list of JSON objects containing the data within each of
-the tables that follow the section titles.
+Create and print a JSON object containing the data in the [El Paso County
+Elected Officials Directory](https://epcountyvotes.com/elected-officials-and-candidate-information/elected-officials/print).
+ (ignore the print modal). The URL for the directory is in [url.txt](https://github.com/civicpolitics/interview/blob/2e4bdcd71caf3a0e406b24832e79099c5980c374/url.txt).
+The object should have a key for each section of the site. The value for each
+of these keys should be a list of JSON objects containing the data within each
+of the tables that follow the section titles.
 
-The objects within these lists each represent a row of the corresponding table.
-The keys should be the column names of the table and values should be the data
-in that column for the row that the object represents.
+The objects within these lists should each represent a row of the corresponding
+table. The keys should be the column names of the table and values should be
+the data corresponding to that column for the row that the object represents.
 
-For example, the first key and corresponding output of the object should be:
+For example, the first key and corresponding value of the final object should be:
 ```json
 {
   "Federal - Executives": [
